@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- configurazione.xsd -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="ParametriDiConfigurazione">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="font" type="xs:string"/>
+                <xs:element name="dimensioneFont" type="xs:float"/>
+				<xs:element name="fontWeightTitolo" type="xs:string"/>
+		        <xs:element name="dimensioneFontTitolo" type="xs:float"/>
+                <xs:element name="dimensioni">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="double" type="xs:double" minOccurs="2" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="coloreSfondo" type="xs:string"/>
+				<xs:element name="sogliaMin" type="xs:short"/>
+				<xs:element name="sogliaMax" type="xs:short"/>
+            </xs:sequence>
+			<xs:attribute name="numeroGiorni" type="xs:byte"/>
+			<xs:attribute name="ipClient" type="xs:string"/>
+			<xs:attribute name="ipServerLog" type="xs:string"/>
+			<xs:attribute name="portaServerLog" type="xs:short"/>
+			<xs:attribute name="nomeUtenteDBMS" type="xs:string"/>
+			<xs:attribute name="passwordDBMS" type="xs:string"/>
+			<xs:attribute name="ipDBMS" type="xs:string"/>
+			<xs:attribute name="portaDBMS" type="xs:short"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

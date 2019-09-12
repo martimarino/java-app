@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- configurazione.xml -->
+<ParametriDiConfigurazione numeroGiorni="15" ipClient="127.0.0.1" ipServerLog="127.0.0.1" portaServerLog="6979" nomeUtenteDBMS="root" passwordDBMS="" ipDBMS="localhost" portaDBMS="3306">
+	<font>Kalinga</font>
+	<dimensioneFont>14.0</dimensioneFont>
+	<fontWeightTitolo>Bold</fontWeightTitolo>
+	<dimensioneFontTitolo>20.0</dimensioneFontTitolo>
+	<dimensioni>
+		<double>995.0</double>
+		<double>530.0</double>
+	</dimensioni>
+	<coloreSfondo>#c1ffe8</coloreSfondo>
+	<sogliaMin>80</sogliaMin>
+	<sogliaMax>120</sogliaMax>
+</ParametriDiConfigurazione>
